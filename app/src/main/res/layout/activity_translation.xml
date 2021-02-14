@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Translation">
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/bgHeader"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-84dp"
+        android:layout_marginRight="-44dp"
+        android:src="@drawable/colortransblind" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-100dp"
+        android:layout_marginBottom="29dp"
+        android:src="@drawable/colortransblind" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/circleblind" />
+    <ImageView
+        android:id="@+id/circle4"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_toLeftOf="@+id/circle3"
+        android:src="@drawable/colortransblind" />
+
+    <TextView
+        android:id="@+id/detectlang"
+        android:layout_width="206dp"
+        android:layout_height="59dp"
+        android:layout_alignStart="@+id/Translang"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Detecting.."
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <TextView
+        android:id="@+id/detecttext"
+        android:layout_width="206dp"
+        android:layout_height="59dp"
+        android:layout_above="@+id/Translang"
+        android:layout_alignStart="@+id/detectlang"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="422dp"
+        android:layout_marginBottom="42dp"
+        android:gravity="center"
+        android:text="Source Text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Translang"
+        android:layout_width="206dp"
+        android:layout_height="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="132dp"
+        android:gravity="center"
+        android:text="English"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Transtext"
+        android:layout_width="206dp"
+        android:layout_height="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtsource"
+        android:layout_width="387dp"
+        android:layout_height="196dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btntrans"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="360dp"
+        android:background="#000000"
+        android:textColor="#ffffffff"
+        android:text="Translate"
+        android:textStyle="bold" />
+</RelativeLayout>

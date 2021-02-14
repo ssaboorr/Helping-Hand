@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapps"
+    tools:context=".Greetings">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/greetingtxt"
+                android:textAllCaps="false"
+                android:textColor="	#D3D3D3"
+                android:textColorHint="#AD1457"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:fontFamily="cursive" />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:rowCount="3"
+            android:columnCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp" tools:targetApi="lollipop">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/name1"
+
+                        android:layout_height="0dp"
+                        android:layout_width="100dp"
+                        android:src="@drawable/ic_wb_sunny_black_24dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="20dp"
+                        android:background="#FDB813"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/gmgr" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/good_morning"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp" tools:targetApi="lollipop">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/age1"
+
+                        android:layout_height="0dp"
+                        android:layout_width="100dp"
+                        android:src="@drawable/ic_wb_cloudy_black_24dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="20dp"
+                        android:background="#7EC0EE"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/gmgr" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/good_evening"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp" tools:targetApi="lollipop">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/gn"
+
+                        android:layout_height="0dp"
+                        android:layout_width="100dp"
+                        android:src="@drawable/ic_brightness_3_black_24dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="20dp"
+                        android:background="#F5F5F5"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/gmgr" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/good_night"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp" tools:targetApi="lollipop">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/hello"
+
+                        android:layout_height="0dp"
+                        android:layout_width="100dp"
+                        android:src="@drawable/ic_mood_black_24dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="20dp"
+                        android:background="#2bbfb4"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/gmgr" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/hello"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp" tools:targetApi="lollipop">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/gb"
+
+                        android:layout_height="0dp"
+                        android:layout_width="100dp"
+                        android:src="@drawable/ic_pan_tool_black_24dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="20dp"
+                        android:background="#FFB6C1"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/gmgr" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Good bye"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp" tools:targetApi="lollipop">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/howare"
+
+                        android:layout_height="0dp"
+                        android:layout_width="100dp"
+                        android:src="@drawable/ic_announcement_black_24dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="20dp"
+                        android:background="#d65a5a"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/gmgr" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/how_are_u"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp" tools:targetApi="lollipop">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/congrats"
+
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#408080"
+                        android:contentDescription="@string/gmgr"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cong" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Congrats"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp" tools:targetApi="lollipop">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/tk"
+
+                        android:layout_width="100dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#5D3381"
+                        android:contentDescription="@string/gmgr"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_sentiment_very_satisfied_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/thank_you"
+                        android:textColor="#5D3381"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

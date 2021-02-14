@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Mute_page"
+    tools:showIn="@layout/app_bar_mute_page">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_login"
+        android:elevation="5dp" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="174dp"
+        android:layout_height="70dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="579dp"
+        android:elevation="5dp"
+        android:fontFamily="monospace"
+        android:text="Speaker"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:transitionName="tvLogin" />
+
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/bgHeader"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-100dp"
+        android:src="@drawable/colortransmute"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/colortransmute" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/circlemute" />
+
+    <ImageView
+        android:id="@+id/circle4"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_toLeftOf="@+id/circle3"
+        android:src="@drawable/colortransmute" />
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bgHeader"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="-19dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="381dp"
+                    android:layout_height="535dp"
+                    android:layout_alignStart="@+id/cv"
+                    android:orientation="vertical"
+                    android:paddingBottom="40dp">
+
+
+                    <EditText
+                        android:id="@+id/mspeak"
+                        android:layout_width="349dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30sp"
+                        android:layout_marginRight="10dp"
+                        android:autofillHints=""
+                        android:hint="write something that you want to speak"
+                        android:inputType="textMultiLine" />
+
+
+                    <ImageButton
+                        android:id="@+id/p_button"
+                        android:layout_width="330dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="0"
+                        android:background="@color/colorWhite"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/speak" />
+
+                    <EditText
+                        android:id="@+id/nspeak"
+                        android:layout_width="360dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="write numbers that yo want to speak"
+                        android:inputType="number" />
+
+                    <ImageButton
+                        android:id="@+id/n_button"
+                        android:layout_width="330dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/colorWhite"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/speak" />
+
+                    <ImageButton
+                        android:id="@+id/clear"
+                        android:layout_width="181dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="100dp"
+                        android:background="@color/colorWhite"
+                        android:contentDescription="TODO"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/delete1" />
+
+                    <ImageButton
+                        android:id="@+id/logout"
+                        android:layout_width="181dp"
+                        android:layout_height="60dp"
+                        android:layout_above="@+id/cv"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="30dp"
+                        android:background="@color/colorWhite"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logout" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

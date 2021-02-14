@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Imagelabeling">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="605dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </com.wonderkiln.camerakit.CameraView>
+
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:text="RECOGNIZE" />
+
+    <TextView
+        android:id="@+id/display1"
+        android:layout_width="406dp"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="54dp"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:text="Text To be Displayed "
+        android:textColor="#000000 "
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update_pd">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="526dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
+        android:id="@+id/pddelete"
+        android:layout_width="278dp"
+        android:layout_height="69dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="631dp"
+        android:text="@string/text_to_be_deleted"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/deleteud"
+
+        android:layout_width="280dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="385dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/deletepd"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/delete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="351dp"
+        android:text="@string/pddelete"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/updateud"
+        android:layout_width="280dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="99dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/update" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="11dp"
+        android:text="Update"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/updatetext"
+        android:layout_width="263dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="232dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Text to be Updated"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
