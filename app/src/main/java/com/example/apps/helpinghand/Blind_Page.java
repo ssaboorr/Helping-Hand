@@ -43,6 +43,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.firebase.ui.auth.data.model.User;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -331,7 +332,71 @@ public class Blind_Page extends AppCompatActivity   {
             Intent intent=new Intent(getApplicationContext(),TextRecognize.class);
             startActivity(intent);
         }
+
+        if (s.indexOf("set alarm")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),Alarm.class);
+            startActivity(intent);
+        }
+        if (s.indexOf("show my battery status")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),BatteryStatus.class);
+            startActivity(intent);
+        }
+        if (s.indexOf("make a call")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),Calling.class);
+            startActivity(intent);
+        }
+        if (s.indexOf("show me travel places")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),Travels_Places.class);
+            startActivity(intent);
+        }
+        if (s.indexOf("Scanner")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),Scanner.class);
+            startActivity(intent);
+        }
+
+        if (s.indexOf("send sms")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),SMSSend.class);
+            startActivity(intent);
+        }
+
+        if (s.indexOf("Translation")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),Translation.class);
+            startActivity(intent);
+        }
+        if (s.indexOf("user choice")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),User_choice.class);
+            startActivity(intent);
+        }
+        if (s.indexOf("upload")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(), Upload.class);
+            startActivity(intent);
+        }
+        if (s.indexOf("personal details")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),Personal_Details.class);
+            startActivity(intent);
+        }
+        if (s.indexOf("greetings")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),Greetings.class);
+            startActivity(intent);
+        }
+        if (s.indexOf("todays news")!=-1)
+        {
+            Intent intent=new Intent(getApplicationContext(),News.class);
+            startActivity(intent);
+        }
     }
+
 
 
     private void jsonparsefacts() {
